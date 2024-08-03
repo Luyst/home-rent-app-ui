@@ -1,0 +1,38 @@
+[
+    {
+        "image": "https://s3-alpha-sig.figma.com/img/fc2a/22eb/77b12515a6310130b669ed3062ff9bd9?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UnZyt-enOGILMJJAcHek0pWMKYsUk1N-31SIZr5~TZO7MaGLTtyfWdlZig9eOgzv1Xgsv2UYVztUrcBQQXPNcmeF03BxcnNoEDauLY~dxw6FPbZ8dAiJyM9nHbETgxyq88rTeLa3ia9VdwXA8QwGCtNZY2Zcm7ayZK7Ug~~EmInSHD6doqS85k3vmoQW~M-QJaSPsoTEi3cTCeqLt3zPFfweagMT3YHOSeqgRClSIQnAz5cCj4rUtl6ATpUwSsvDWFkSLVPrT0Nimt9mntiAw8fXtXF~R8aAwqKNuf8b3z2uvrIR-FbKD5UeG22aRsXLTI92VuldCPG0jk3ynA1aTg__",
+        "bedroom": 6,
+        "bathroom": 4,
+        "nameHouse": "My Future House",
+        "address": "Da Nang, Viet Nam",
+        "price": "Free",
+        "description": "Welcome everybody"
+    },
+    {
+        "image": "https://s3-alpha-sig.figma.com/img/c0b5/b84e/e1d4028e9f2ad18d455cc20f8f30bcce?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JzIUQzFFvR08qwpKGbXfD2-UcOnbMcU30kPGUDDI2NB-oMOPBYmRp6vVWn9VvYfW6PKNkIYh9Z9YxnT9aBUkw3MFvu-nbjG7lwbxL0PcplbogsCUjV1VUQ-qed4KvhRLrD~9KPFCiL0wYGryYkRXYsNYnet6VDyr9tw5mdxtlbz6TP-tydqzi1B09kVHuY~bGUiHZZ1Y5GvpPAMevDHRYOShsq5K2aDS0bkQ1Uz~cIwfnUpxW4V5O2fScWfc2h2lQazOcBK-MRb-StEhISeq1-kJZDI4KjJD4Om-l8EPpCmNk0kg~MYKjuguaVENKdKHg5CWGcy9Ehwgwhy3RwN81g__",
+        "bedroom": 6,
+        "bathroom": 4,
+        "nameHouse": "Dreamsville House",
+        "address": "Jl. Sultan Iskandar Muda, Jakarta selatan",
+        "price": "2.500.000.000",
+        "description": "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars"
+    },
+    {
+        "image": "https://s3-alpha-sig.figma.com/img/fc2a/22eb/77b12515a6310130b669ed3062ff9bd9?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UnZyt-enOGILMJJAcHek0pWMKYsUk1N-31SIZr5~TZO7MaGLTtyfWdlZig9eOgzv1Xgsv2UYVztUrcBQQXPNcmeF03BxcnNoEDauLY~dxw6FPbZ8dAiJyM9nHbETgxyq88rTeLa3ia9VdwXA8QwGCtNZY2Zcm7ayZK7Ug~~EmInSHD6doqS85k3vmoQW~M-QJaSPsoTEi3cTCeqLt3zPFfweagMT3YHOSeqgRClSIQnAz5cCj4rUtl6ATpUwSsvDWFkSLVPrT0Nimt9mntiAw8fXtXF~R8aAwqKNuf8b3z2uvrIR-FbKD5UeG22aRsXLTI92VuldCPG0jk3ynA1aTg__",
+        "bedroom": 6,
+        "bathroom": 4,
+        "nameHouse": "Ascot House",
+        "address": "Jl. Sultan Iskandar Muda, Jakarta selatan",
+        "price": "2.500.000.000",
+        "description": "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars"
+    },
+    {
+        "image": "https://s3-alpha-sig.figma.com/img/3739/b85c/79b000c10d47f525e33f0be4722db6d3?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=d26tulPR7KYs5OCK54sea80k5lllIo0VBpIsAonuffbBTfwP4z2RSIRq3d5hjjNSnm54cq4epIZcJE8XcsC4kEtRM03fa7fPcwNaGJEsWMIysX7bdHuif5Ui59zvMHVMiKhBdy-GRzcS3vNExxhi7TA9W8RBDCYxtLXbmaXdWakef99bi0W2xz0iW1ehdJzUMjj8Z32nuv1jxKd1WuAxt2CDlkZyqePJJhXRngbKxMvRfTM1ePHq5m4pbjN1i1JpEr3zbINaivFtZBaOgYiP72ceqstazjFZRr1MbONhAL6ZtrXwicpnaz3OELkSqd12DQHwbn1v0bbLBy7bUpQb9Q__",
+        "bedroom": 6,
+        "bathroom": 4,
+        "nameHouse": "Orchad House",
+        "address": "Jl. Sultan Iskandar Muda, Jakarta selatan",
+        "price": "2.500.000.000",
+        "description": "The 3 level house that has a modern design, has a large pool and a garage that fits up to four cars"
+    }
+]
