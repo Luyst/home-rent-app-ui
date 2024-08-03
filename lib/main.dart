@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'dart:convert';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'widgets/card_house.dart';
 import 'widgets/card_best.dart';
 import 'widgets/search_widget.dart';
@@ -45,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void loadHouseData() {
-    rootBundle.loadString('house_data.json').then((response) {
+    rootBundle.loadString('assets/house_data.json').then((response) {
       final List<dynamic> data = json.decode(response);
       setState(() {
         _houseData = data.cast<Map<String, dynamic>>();
@@ -58,53 +57,53 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          toolbarHeight: 100,
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      const Text('Location',
-                          style: TextStyle(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w400,
-                            color: Colors.black54,
-                          )),
-                      Row(children: <Widget>[
-                        const Text(
-                          'Jakarta',
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.w500),
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.keyboard_arrow_down_sharp),
+      appBar: AppBar(
+        toolbarHeight: 100,
+        title: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    const Text('Location',
+                        style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w400,
                           color: Colors.black54,
-                          onPressed: () {
-                            // Handle location dropdown event
-                          },
-                        ),
-                      ])
-                    ],
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.notifications_outlined),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            ],
-          ),
+                        )),
+                    Row(children: <Widget>[
+                      const Text(
+                        'Jakarta',
+                        style: TextStyle(
+                            fontSize: 20, fontWeight: FontWeight.w500),
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.keyboard_arrow_down_sharp),
+                        color: Colors.black54,
+                        onPressed: () {
+                          // Handle location dropdown event
+                        },
+                      ),
+                    ])
+                  ],
+                ),
+                IconButton(
+                  icon: const Icon(Icons.notifications_outlined),
+                  onPressed: () {},
+                ),
+              ],
+            ),
+          ],
         ),
-        body: Container(
+      ),
+      body: SingleChildScrollView(
+        child: Container(
           padding: EdgeInsets.symmetric(horizontal: 4.0),
-          height: 800,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 0.0),
@@ -119,19 +118,20 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         child: Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              NavigationButtonList(
-                                labels: [
-                                  'House',
-                                  'Apartment',
-                                  'Hotel',
-                                  'Villa',
-                                  'Cottage'
-                                ],
-                              )
-                            ]),
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            NavigationButtonList(
+                              labels: [
+                                'House',
+                                'Apartment',
+                                'Hotel',
+                                'Villa',
+                                'Cottage'
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],
@@ -157,7 +157,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              Expanded(
+              Container(
+                height: 200, // Chiều cao cho phần danh sách ngang
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: _houseData.length,
@@ -201,9 +202,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
               ),
-              Expanded(
+              Container(
+                height: 400, // Chiều cao cho phần danh sách đứng
                 child: ListView.builder(
-                  itemCount: 3,
+                  itemCount: _houseData.length,
                   itemBuilder: (context, index) {
                     final house = _houseData[index];
                     return GestureDetector(
@@ -228,6 +230,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ],
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
